@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20151105062209) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "hobbies_people", force: :cascade do |t|
+  create_table "hobbies_people", id: false, force: :cascade do |t|
     t.integer "person_id"
     t.integer "hobby_id"
   end
